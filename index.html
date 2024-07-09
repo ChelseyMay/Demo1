@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<title>Coffee</title>
+</head>
+
+<body>
+	<div class="heading">
+	<h1> Coffee </h1>
+	<h2> Because Adulting is Hard</h2>
+	<hr>
+</div>
+<div class="coffee">
+
+	<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Latte_and_dark_coffee.jpg/800px-Latte_and_dark_coffee.jpg" alt="Coffee">
+</div>
+	
+	<p>Coffee is a beverage brewed from <span style="color:#6E2C00"><strong>roasted coffee beans.</strong></span> Darkly colored, bitter, and slightly acidic, coffee has a stimulating effect on humans, primarily due to its caffeine content. It has the highest sales in the world market for hot drinks.</p>
+<a href="https://en.wikipedia.org/wiki/Coffee" target="_blank">Read More Here</a>
+<br>
+
+<button class="myButton"> Want a Coffee? </button>
+
+<script>
+
+
+const button = document.querySelector(".myButton");
+
+button.addEventListener ("click", ask);
+
+function ask() {
+		let coffee = prompt("Would You Like Some Coffee?");
+
+		if (coffee === "yes"|| coffee === "Yes") {
+			alert ("Great! Have one on us!");
+		} else {
+			alert ("Okay, go drink some water!")
+		}
+	}
+
+</script>
+
+</body>
+</html>
